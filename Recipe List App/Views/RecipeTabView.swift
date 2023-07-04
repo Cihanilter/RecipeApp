@@ -16,14 +16,6 @@ struct RecipeTabView: View {
         
         TabView (selection: $tabSelection) {
             
-            RecipeFeaturedView()
-                .tabItem {
-                    VStack {
-                        Image(systemName: "star.fill")
-                        Text("Featured")
-                    }
-                }
-                .tag(Constants.featuredTab)
             
             RecipeListView()
                 .tabItem {
