@@ -148,6 +148,8 @@ struct AddRecipeView: View {
         let recipe = Recipe(context: viewContext)
         recipe.id = UUID()
         recipe.name = name
+        recipe.summary = summary
+        recipe.featured = false
         recipe.cookTime = cookTime
         recipe.prepTime = prepTime
         recipe.totalTime = totalTime
